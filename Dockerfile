@@ -1,4 +1,4 @@
-FROM openjdk:11-jdk
+FROM openjdk:23-jdk
 
 ARG JAR_FILE=build/libs/*.jar
 
