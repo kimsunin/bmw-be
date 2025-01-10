@@ -28,7 +28,7 @@ jobs:
         run: |
           cd ./src/main/resources
           touch application.properties
-          echo "${{ secrets.APPLICATION }}" | base64 --decode > ./application.properties
+          echo "${{ secrets.APPLICATION }}" > ./application.properties
           cat application.properties
 
       # gradle setup
