@@ -26,7 +26,7 @@ jobs:
       # make application.properties
       - name: Make application.properties
         run: |
-          cd ./src/main/resource
+          cd ./src/main/resources
           touch application.properties
           echo "${{ secrets.APPLICATION }}" | base64 --decode > ./application.properties
           cat application.properties
